@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	
+	
+<!-- 	<welcome-file-list>
+	 ====================================Welcome-file-list============================================================= 
+		which file to run firstly 
+		we can mention that file 
+		inside the <welcome-file-list>==><welcome-file> 	
+	
+	 
+	 
+	</welcome-file-list> -->
+	<!--configuratoin for register  -->
+	<servlet-mapping>
+	
+		<servlet-name>register</servlet-name>
+		<url-pattern>/Submit</url-pattern>
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.jsp.servlet_simple_crud_operation.controller.InsertStudentController</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	
+		<servlet-name>login</servlet-name>
+		<url-pattern>/#</url-pattern>
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.jsp.servlet_simple_crud_operation.controller.LoginStudentController</servlet-class>
+	</servlet>
+	
+	
+</web-app>
